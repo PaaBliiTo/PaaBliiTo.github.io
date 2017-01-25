@@ -1,2 +1,3 @@
 # PaaBliiTo.github.io
-TD - Blockchain
+
+Binôme : Fabio Benoit - Adrien Berger
