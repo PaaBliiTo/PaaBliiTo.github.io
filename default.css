@@ -754,14 +754,24 @@
 	}
 	
 	
-#standard-block {
-    overflow: hidden;
-    margin-top: 5em;
-    padding-top: 1em;
-	border-top: 1px solid rgba(0,0,0,0.2);
-	text-align: center;
-}
+	.standard-block {
+	    overflow: hidden;
+		text-align: center;
+	}
 
-#simple-box {
-    padding: 80px 40px 80px 40px;
-}
+	.simple-box {
+	    padding: 80px 40px 80px 40px;
+	}
+
+	.separation-lign-top
+	{
+		margin-top: 5em;
+	    padding-top: 1em;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+
+	.separation-lign-normal
+	{
+		padding-top: 1em;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
