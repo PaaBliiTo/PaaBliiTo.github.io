@@ -14,13 +14,13 @@ contract TP1 {
 		uint voteCount;
 	}
 
-	adress chairperson;
-	mapping(adress => Voter) voters;
+	address chairperson;
+	mapping(address => Voter) voters;
 	Proposal[] proposals;
 
 	function Ballot(uint8 _numProposals) {
 		chairperson = msg.sender;
-		proposals.length = _numProposals
+		proposals.length = _numProposals;
 	}
 
 	function vote(uint8 proposal) {
@@ -31,7 +31,7 @@ contract TP1 {
 		proposals[proposal].voteCount += 1;
 	}
 
-	function winningProposal() constant return (uint8 winningProposal) {
+	function winningProposal() constant returns (uint8 winningProposal) {
 		uint256 winningVoteCount = 0;
 		for(uint8 proposal = 0; proposal < proposals.length; proposal++){
 			if(proposals[proposal].voteCount > winningVoteCount) {
