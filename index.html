@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bitcoin Explorer</title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div>
+		<div>
+			Block Height : <span id="block-height"></span>
+		</div>
+		<div>
+			<p>
+				
+			</p>
+			<input type="text" name="block" placeholder="Block Hash" id="block-input">
+			<button id="block-button">Get Block Info</button>
+			<pre id="block-info"></pre>
+		</div>
+
+		<div>
+			<p>
+				
+			</p>
+			<input type="text" name="address" placeholder="Address Hash" id="address-input">
+			<button id="address-button">Get Address Info</button>
+			<pre id="address-info"></pre>
+		</div>
+
+	</div>
+</body>
+</html>
