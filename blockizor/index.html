@@ -85,7 +85,7 @@
              </div>
            </div>
            <div v-if="animate">
-             <p v-if="!error"><img src="../img/animation.gif" /></p>
+             <p v-if="!error"><img src="./img/animation.gif" /></p>
              <p v-if="!error"> Please wait for the contract to be stocked in the Ethereum Blockchain. It can last up to one minute. When done, you will be taken to the confirmation page<p><a v-bind:href="etherscanLink" target="_new">Blockchain Transaction : {{ tx }}</a></p>
              <p v-if="error">An error occured. The error is : "{{ error }}".</p>
            </div>
