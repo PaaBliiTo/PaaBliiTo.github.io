@@ -42,7 +42,7 @@ var app = new Vue({
       // `this` inside methods points to the Vue instance
 
       if (web3.eth.accounts.length === 0) {
-        alert("Aucun compte Ethereum trouvé - Merci de vous connecté à votre plug-in MetaMask puis recharger la page");
+        alert("No Ethereum account found - Please connect to your Metamask account then reload the page");
         return;
       }
       app.error="";
@@ -91,7 +91,7 @@ function drop_handler(ev) {
   console.log('ev is', ev);
   var f = ev.dataTransfer.files[0];
   if (!f) {
-    return alert('Accès refusé au meta data du fichier');
+    return alert('Access denied to the file meta data');
   }
   console.log ("the file is" , f);
   app.lastModified = f.lastModified;
